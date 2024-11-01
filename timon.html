@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Präferenzen von Timon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigationsleiste -->
+    <nav>
+        <ul>
+            <li><a href="roman.html">Roman</a></li>
+            <li><a href="mirjam.html" class="active">Mirjam</a></li>
+            <li><a href="josia.html">Josia</a></li>
+            <li><a href="timon.html">Timon</a></li>
+            <li><a href="micha.html">Micha</a></li>
+            <li><a href="jona.html">Jona</a></li>
+            <li><a href="overview.html">Gesamtübersicht</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formular zum Hinzufügen neuer Items -->
+    <div class="add-item-form">
+        <h2>Neues Item hinzufügen</h2>
+        <input type="text" id="new-item-name" placeholder="Name der Frucht/des Gemüses">
+        <button id="add-item-button">Hinzufügen</button>
+    </div>
+
+    <!-- Seiteninhalt -->
+    <h1>Präferenzen von Timon</h1>
+    <div class="fruits">
+        <!-- Items werden dynamisch generiert -->
+    </div>
+    <div class="categories">
+        <div class="category" id="like">Mag ich</div>
+        <div class="category" id="neutral">Geht schon</div>
+        <div class="category" id="dislike">Mag ich nicht</div>
+    </div>
+    <!-- Einbinden der Skripte -->
+    <script src="items.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

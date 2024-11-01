@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Gesamtübersicht der Familienpräferenzen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigationsleiste -->
+    <nav>
+        <ul>
+            <li><a href="roman.html">Roman</a></li>
+            <li><a href="mirjam.html">Mirjam</a></li>
+            <li><a href="josia.html">Josia</a></li>
+            <li><a href="timon.html">Timon</a></li>
+            <li><a href="micha.html">Micha</a></li>
+            <li><a href="jona.html">Jona</a></li>
+            <li><a href="overview.html" class="active">Gesamtübersicht</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formular zum Hinzufügen neuer Items -->
+    <div class="add-item-form">
+        <h2>Neues Item hinzufügen</h2>
+        <input type="text" id="new-item-name" placeholder="Name der Frucht/des Gemüses">
+        <button id="add-item-button">Hinzufügen</button>
+    </div>
+
+    <!-- Seiteninhalt -->
+    <h1>Gesamtübersicht der Familienpräferenzen</h1>
+    <div class="fruits">
+        <!-- Items werden dynamisch generiert -->
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Mag ich</th>
+                <th>Geht schon</th>
+                <th>Mag ich nicht</th>
+            </tr>
+        </thead>
+        <tbody id="overview-table">
+            <!-- Dynamisch generierte Zeilen -->
+        </tbody>
+    </table>
+
+    <!-- Popup für die Köchin -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="item-title"></h2>
+            <p id="likes"></p>
+            <p id="neutrals"></p>
+            <p id="dislikes"></p>
+        </div>
+    </div>
+
+    <!-- Einbinden der Skripte -->
+    <script src="items.js"></script>
+    <script src="overview.js"></script>
+</body>
+</html>

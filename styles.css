@@ -1,0 +1,187 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    color: #333;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, nav li a.active {
+    background-color: #4CAF50;
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav li {
+        float: none;
+    }
+}
+
+/* Kategorien Styling */
+.fruits, .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+    cursor: move;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.category {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin: 5px;
+    width: 120px;
+    min-height: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Farbcodierung der Kategorien */
+#like {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+#neutral {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+#dislike {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Tabelle Styling für die Übersicht */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.like {
+    color: #28a745;
+}
+
+.dislike {
+    color: #dc3545;
+}
+
+.neutral {
+    color: #ffc107;
+}
+
+/* Styling für das Formular zum Hinzufügen neuer Items */
+.add-item-form {
+    text-align: center;
+    margin: 20px;
+}
+
+.add-item-form h2 {
+    margin-bottom: 10px;
+}
+
+.add-item-form input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.add-item-form button {
+    padding: 10px 20px;
+}
